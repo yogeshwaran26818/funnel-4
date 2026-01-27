@@ -1,0 +1,58 @@
+.funnel-flow-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.funnel-header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.funnel-header h1 {
+  color: #1a202c;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ReactFlow overrides */
+.react-flow__edge-path {
+  stroke: #334155 !important;
+  stroke-width: 2 !important;
+}
+
+.react-flow__edge-smoothstep,
+.react-flow__edge-straight,
+.react-flow__edge-default {
+  stroke: #334155 !important;
+  stroke-width: 2 !important;
+}
+
+/* Arrow marker styling */
+.react-flow__edge-path {
+  marker-end: url(#react-flow__arrowclosed) !important;
+}
+
+.react-flow__markerdef--arrowclosed {
+  overflow: visible;
+}
+
+defs marker path {
+  fill: #334155 !important;
+}
+
+/* Smooth transitions */
+.react-flow__edge {
+  transition: stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+.react-flow__edge:hover {
+  stroke: #0f172a !important;
+  stroke-width: 3 !important;
+}

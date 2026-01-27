@@ -1,0 +1,45 @@
+.arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40px;
+  margin: 5px 0;
+}
+
+.arrow-line {
+  width: 3px;
+  height: 25px;
+  background: linear-gradient(to bottom, #334155 0%, #334155 70%, transparent 100%);
+  box-shadow: 0 0 8px rgba(51, 65, 85, 0.4);
+}
+
+.arrow-head {
+  font-size: 1.3em;
+  color: #334155;
+  text-shadow: 0 0 6px rgba(51, 65, 85, 0.4);
+  margin-top: 2px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow-container {
+    height: 30px;
+  }
+
+  .arrow-line {
+    height: 18px;
+  }
+
+  .arrow-head {
+    font-size: 1.1em;
+  }
+}

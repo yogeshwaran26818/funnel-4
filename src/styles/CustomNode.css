@@ -1,0 +1,81 @@
+.custom-node {
+  padding: 15px;
+  border-radius: 8px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 150px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.custom-node:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.custom-node.main-box {
+  border-top: 5px solid #4facfe;
+  padding: 20px;
+  background: white;
+}
+
+.custom-node.main-box:nth-child(2) {
+  border-top-color: #43e97b;
+}
+
+.custom-node.sub-box {
+  border: 1px solid #d1d5db;
+  background: #f8fafc;
+  padding: 12px 20px;
+}
+
+.custom-node.mini-box {
+  border: 1px solid #d1d5db;
+  background: #f8fafc;
+  padding: 10px 15px;
+  font-size: 0.85em;
+}
+
+.custom-node.boost-box {
+  background: #d3d3d3;
+  color: #333;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: 1px solid #bbb;
+}
+
+.custom-node.center-box {
+  border: 2px solid #6c5ce7;
+  background: white;
+  padding: 15px;
+  min-width: 180px;
+}
+
+.node-icon {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.node-label {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #1a202c;
+  line-height: 1.3;
+}
+
+.node-description {
+  font-size: 0.75em;
+  color: #666;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.custom-node.main-box .node-label {
+  font-size: 1.1em;
+  font-weight: 700;
+}
