@@ -190,7 +190,6 @@ const FunnelChart = () => {
     { id: 'e-qual-converted', source: 'lead-qualification', target: 'lead-converted', markerEnd: { type: MarkerType.ArrowClosed, width: 30, height: 30 }, style: { stroke: '#334155', strokeWidth: 2 } },
     { id: 'e-converted-final', source: 'lead-converted', target: 'final-analysis', markerEnd: { type: MarkerType.ArrowClosed, width: 30, height: 30 }, style: { stroke: '#334155', strokeWidth: 2 } },
     { id: 'e-answer-final', source: 'answer-queries', target: 'final-analysis', markerEnd: { type: MarkerType.ArrowClosed, width: 30, height: 30 }, style: { stroke: '#334155', strokeWidth: 2 } },
-    { id: 'e-final-outbound', source: 'final-analysis', target: 'outbound-campaign', markerEnd: { type: MarkerType.ArrowClosed, width: 30, height: 30 }, style: { stroke: '#334155', strokeWidth: 2 } },
   ];
 
   const onNodesChange = (changes) => {
